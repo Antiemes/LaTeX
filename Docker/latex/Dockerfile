@@ -6,14 +6,16 @@ RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula selec
 RUN apt-get update && apt-get install --no-install-recommends -y \
   make \
   texlive-xetex \
+  texlive-luatex \
   texlive-science \
   texlive-font-utils \
   ghostscript \
   texlive-lang-european \
   texlive-latex-recommended \
   texlive-latex-extra \
-  #texlive-fonts-extra \
   texlive-bibtex-extra \
+  latexmk \
+  texlive-plain-generic \
   biber \
   imagemagick \
   pdftk \
